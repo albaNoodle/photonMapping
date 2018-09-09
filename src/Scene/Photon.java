@@ -10,9 +10,16 @@ public class Photon {
 	private Color flujo;
 	
 	
-	public Photon(Point p, /*Vector v,*/ Color f) {
+	public void setPosicion(Point posicion) {
+		this.posicion = posicion;
+	}
+
+	public void setFlujo(Color flujo) {
+		this.flujo = flujo;
+	}
+
+	public Photon(Point p, Color f) {
 		this.posicion = p;
-	//	this.direccion = v;
 		this.flujo = f;
 	}
 	
@@ -23,10 +30,4 @@ public class Photon {
 	public Color getFlujo() {
 		return flujo;
 	}
-	
-	/*
-	public Vector getDireccion() {
-		return direccion;
-	}
-	*/
 }
